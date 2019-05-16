@@ -1,0 +1,155 @@
+@charset "UTF-8";
+body {
+height: 100%;
+}
+/*header*/
+.globalheader {
+background: #e8a5be;
+top: 0;
+left: 0;
+right: 0;
+z-index: 9999;
+width: 100%;
+}
+@media (min-width: 992px){
+.globalheader {
+border-bottom: none;
+position: relative;
+}
+}
+.globalheader .logo {
+margin-left: 8px;
+margin-bottom: 0;
+padding-bottom: 0;
+line-height: 1;
+}
+@media (min-width: 992px){
+.globalheader .logo {
+margin-left: 2rem;
+margin-bottom: 0;
+}
+}
+.globalheader .logo img {
+padding: 10px 0;
+vertical-align: top;
+}
+/* メインビジュアル */
+.main_movie {
+
+}
+.changing_mv {
+width: 100%;
+height: 0;
+position: relative;
+z-index: 1;
+overflow: hidden;
+padding-top: 44%;
+margin-top: 2rem;
+}
+
+.changing_mv::before {
+content: '';
+background: url(img/mv_cover.png) center/6px;
+display: block;
+height: 100%;
+opacity: 0.3;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 10;
+}
+@media (max-width: 768px) {
+.changing_mv {
+padding-top: 50%;
+}
+ }
+@media (max-width: 767px) {
+.changing_mv {
+height: 240px;
+}
+.changing_mv::before {
+background-size: 4px;
+}
+ }
+
+.changing_mv_movie {
+position: absolute;
+top: 49%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+}
+ @media (min-width: 992px){
+.changing_mv_movie {
+top: 41%;
+}
+}
+
+ @media (max-width: 767px){
+.changing_mv_movie {
+min-width: 430px;
+}
+ }
+
+/*バナーエリア*/
+.banner_area {
+margin-top: 2rem;
+}
+@media (max-width: 767px) {
+.banner_area {
+margin-top: 2rem;
+}
+}
+ 
+.course_bnr_img img{
+max-width: 100%;
+}
+.course_bnr_img a {
+display: block;
+transition: .3s all;
+}
+.course_bnr_img a:hover {
+opacity: .8;
+ }
+@media (max-width: 767px) {
+.course_bnr_img {
+margin: 0 3rem 1rem 3rem;
+}
+}
+/*sns*/
+.sns_area {
+margin-top: 2rem;
+}
+@media (max-width: 767px) {
+.sns_area {
+margin-bottom: 1rem;
+margin-top: 1rem;
+}
+}
+.sns_list {
+margin: 0 auto;
+padding: 0;
+}
+@media (max-width: 767px) {
+.sns_list {
+margin: 0 auto;
+padding: 0;
+}
+}
+/*footer*/
+footer {
+background: #e8a5be;
+margin-top: 40px;
+}
+@media (max-width: 767px) {
+footer {
+margin-top: 0;
+}
+}
+footer .copyright {
+font-size: 12px;
+padding: 1em 0;
+text-align: center;
+width: 100%;
+}
