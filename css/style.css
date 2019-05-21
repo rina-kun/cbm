@@ -101,7 +101,7 @@ margin-top: 2rem;
 margin-top: 2rem;
 }
 }
- 
+
 .course_bnr_img img{
 max-width: 100%;
 }
@@ -152,4 +152,75 @@ font-size: 12px;
 padding: 1em 0;
 text-align: center;
 width: 100%;
+}
+
+/*メインビジュアル*/
+.slider_area {
+  max-width: 730px;
+  float: left;
+  margin: 20px 0 10px;
+}
+.main_visual_area .main_visual_inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#bx-pager a,
+#bx-pager_mb a {
+  display: block;
+  float: left;
+  margin: 0 1.25% 6px 0;
+  width: 19%;
+  box-sizing: border-box;
+}
+#bx-pager a:last-child,
+#bx-pager_mb a:last-child {
+  margin-right: 0;
+}
+#bx-pager a img,
+#bx-pager_mb a img {
+  border: 2px solid #EEE;
+}
+#bx-pager a.active img , #bx-pager a:hover img,
+#bx-pager_mb a.active img , #bx-pager_mb a:hover img {
+  border: 2px solid #E51721;
+}
+
+@media screen and (max-width: 767px) {
+.main_visual_area .main_visual_inner {
+  /*padding: 10px;*/
+}
+#bx-pager,
+#bx-pager_mb {
+  padding: 0 0;
+  text-align: center;
+}
+
+.slider_area {
+  max-width: 100%;
+  float: none;
+  margin: 0px 0 0;
+  box-sizing: border-box;
+}
+.slider_area_wrap {
+  background-image: url(../../img/new_top.png);
+  background-size: auto 100%;
+  padding: 10px;
+}
+.bx-wrapper .bx-prev {  left: -10px !important;}
+.bx-wrapper .bx-next {  right: -10px !important;}
+}
+@media screen and (min-width: 768px) {
+.main_visual_area {
+  background-image: url(../../img/new_top.png);
+}
+
+#bx-pager a img,
+#bx-pager_mb a img {
+  border: 1px solid #EEE;
+}
+#bx-pager a.active img , #bx-pager a:hover img,
+#bx-pager_mb a.active img , #bx-pager_mb a:hover img {
+  border: 1px solid #E51721;
+}
+
 }
