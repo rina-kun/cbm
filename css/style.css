@@ -38,8 +38,8 @@ vertical-align: top;
 /*メインビジュアル*/
 #bx-pager{
   width: 100%;
-  max-width: 930px;
   display: table;
+  padding: 0;
 }
 #bx-pager li{
   display: table-cell;
