@@ -114,7 +114,7 @@ opacity: .8;
  }
 @media (max-width: 767px) {
 .course_bnr_img {
-margin-bottom: 1rem;
+/*margin-bottom: 1rem;*/
 }
 }
 /*sns*/
