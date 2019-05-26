@@ -70,24 +70,9 @@ vertical-align: top;
   border: 1px solid #333;
 }
 
-@media screen and (max-width: 767px) {
-.main_visual_area .main_visual_inner {
-  /*padding: 10px;*/
-}
-
-
-
-}
-@media screen and (min-width: 768px) {
-.main_visual_area {
-
-}
-
-}
-
 /*メインテキスト*/
 .bx-wrapper{
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 
 .maintextarea {
@@ -108,11 +93,12 @@ margin: 1.2rem auto;
 
 /*バナーエリア*/
 .banner_area {
-/*margin-top: 2rem;*/
+    padding: 2rem 0;
+    background-color: #333;
 }
 @media (max-width: 767px) {
 .banner_area {
-/*margin-top: 2rem;*/
+    padding: 1rem 0;
 }
 }
 
@@ -155,7 +141,7 @@ padding: 0;
 /*footer*/
 footer {
 background: #e8a5be;
-margin-top: 40px;
+/*margin-top: 40px;*/
 }
 @media (max-width: 767px) {
 footer {
