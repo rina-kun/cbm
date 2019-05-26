@@ -15,7 +15,32 @@
 <link rel="stylesheet" href="css/bxslider.css">
 <link rel="stylesheet" href="css/style.css">
 
-
+<style>
+.bx-wrapper{
+  margin: 0;
+}
+#bx-pager{
+  width: 100%;
+  max-width: 1000px;
+  display: table;
+}
+#bx-pager li{
+  display: table-cell;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+#bx-pager li:first-child{
+  border-left: 0px solid transparent;
+}
+#bx-pager li a img{
+  width: 100%; 
+  display: block;
+  opacity: 0.5;
+}
+#bx-pager a.active img{  
+  opacity: 1;
+}
+</style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
@@ -34,11 +59,13 @@
       mode: 'fade'
       pager: true,
 });
-  });*/
-		$(function() {
-    $('.bxslider"').bxSlider({
-        pagerCustom: '.custom-thumb'
-    });
+$(document).ready(function(){
+  $('#bxSlider').bxSlider({
+    speed: 2000,
+    auto: 'true',
+    pagerCustom: '#bx-pager'//サムネイルページャで表示する画像のグループを指定する。
+                            //今回は<div id="bx-pager">の部分。
+  });
 });
 </script>
 </head>
@@ -54,14 +81,14 @@
  <div class="container">
 
 <!--メインビジュアル-->
-<div class="main_visual_area">
+<!--<div class="main_visual_area">
   <div class="main_visual_inner clearfix">
-  <div class="slider_area_wrap">
+  <div class="slider_area_wrap">-->
 		
-    <div id="slider_area slider">
+<!--    <div id="slider_area slider">
       <ul class="bxslider">
         <li><a href="#"><img src="img/main_pic1.jpg" alt="" /></a></li>
-        <li><a href="#" target="_blank"><img src="img/main_pic2.jpg" alt="" /></a></li>
+        <li><a href="#" target="_blank"><img src="img/main_pic2.jpg" alt="" /></li>
         <li><a href="#" target="_blank"><img src="img/main_pic3.jpg" alt="" /></a></li>
         <li><a href="#" target="_blank"><img src="img/main_pic4.jpg" alt="" /></a></li>
         <li><a href="#" target="_blank"><img src="img/main_pic5.jpg" alt="" /></a></li>
@@ -75,14 +102,30 @@
         <a data-slide-index="4" href=""><img width="140px" src="img/main_pic5.jpg" alt="" /></a>
         <a data-slide-index="5" href=""><img width="140px" src="img/main_pic6.jpg" alt="" /></a>
       </div>
-    </div>
+    </div>-->
 				
+<!--  </div>
   </div>
-  </div>
-</div>
+</div>-->
+
+<!--test-->
+<ul id="bxSlider" class="slider">
+<li><a href="#"><img src="img/main_pic1.jpg" alt="画像1"></a></li>
+  <li><a href="#"><img src="img/main_pic2.jpg" alt="画像2"></a></li>
+  <li><a href="#"><img src="img/main_pic1.jpg" alt="画像3"></a></li>
+  <li><a href="#"><img src="img/main_pic2.jpg" alt="画像4"></a></li>
+</ul>
+
+<ul id="bx-pager">
+  <li><a data-slide-index="0" href=""><img src="img/main_pic1.jpg" alt="サムネイル画像1"></a></li>
+  <li><a data-slide-index="1" href=""><img src="img/main_pic2.jpg" alt="サムネイル画像2"></a></li>
+  <li><a data-slide-index="2" href=""><img src="img/main_pic1.jpg" alt="サムネイル画像3"></a></li>
+  <li><a data-slide-index="3" href=""><img src="img/main_pic2.jpg" alt="サムネイル画像4"></a></li>
+</ul>
 
  </div><!--/container-->
 </section>
+
 
 <section class="banner_area">
 <div class="container">
