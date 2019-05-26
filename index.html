@@ -20,7 +20,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script>
-$(document).ready(function(){
+/*$(document).ready(function(){
   $('.bxslider').bxSlider({
   auto: true,   ＃自動再生ON
   slideWidth: 940,  ＃スライドの大きさを640pxにする
@@ -33,7 +33,12 @@ $(document).ready(function(){
       mode: 'fade'
       pager: true,
 });
-  });
+  });*/
+		$(function() {
+    $('.bxslider"').bxSlider({
+        pagerCustom: '.custom-thumb'
+    });
+});
 </script>
 </head>
 <body>
@@ -51,16 +56,17 @@ $(document).ready(function(){
 <div class="main_visual_area">
   <div class="main_visual_inner clearfix">
   <div class="slider_area_wrap">
-    <div class="slider_area slider">
+		
+    <div id="slider_area slider">
       <ul class="bxslider">
-        <li><a href="#"><img src="img/main_pic1.jpg" /></a></li>
+        <li><a href="#"><img src="img/main_pic1.jpg" alt="" /></a></li>
         <li><a href="#" target="_blank"><img src="img/main_pic2.jpg" alt="" /></a></li>
         <li><a href="#" target="_blank"><img src="img/main_pic3.jpg" alt="" /></a></li>
         <li><a href="#" target="_blank"><img src="img/main_pic4.jpg" alt="" /></a></li>
         <li><a href="#" target="_blank"><img src="img/main_pic5.jpg" alt="" /></a></li>
         <li><a href="#" target="_blank"><img src="img/main_pic6.jpg" alt="" /></a></li>
       </ul>
-      <div id="bx-pager" class="clearfix">
+      <div id="bx-pager" class="custom-thumb clearfix">
         <a data-slide-index="0" href=""><img width="140px" src="img/main_pic1.jpg" alt="" /></a>
         <a data-slide-index="1" href=""><img width="140px" src="img/main_pic2.jpg" alt="" /></a>
         <a data-slide-index="2" href=""><img width="140px" src="img/main_pic3.jpg" alt=""></a>
@@ -69,12 +75,12 @@ $(document).ready(function(){
         <a data-slide-index="5" href=""><img width="140px" src="img/main_pic6.jpg" alt="" /></a>
       </div>
     </div>
+				
   </div>
-
   </div>
 </div>
 
- </div>
+ </div><!--/container-->
 </section>
 
 <section class="banner_area">
