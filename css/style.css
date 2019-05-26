@@ -36,6 +36,9 @@ vertical-align: top;
 
 
 /*メインビジュアル*/
+.main_visual_area {
+background: url("/img/top_bg.png") no-repeat top center contain;
+}
 #bx-pager{
   width: 100%;
   display: table;
@@ -84,7 +87,7 @@ margin: 1rem auto;
 
 @media screen and (min-width: 768px) {
 .maintextarea {
-margin: 1.2rem auto;
+margin: 2rem auto;
 }
 .main-text { font-size: 1.5em; color: #0C7EA5; font-weight: bold;}
 .sub-text { font-size: 1.1em;}
