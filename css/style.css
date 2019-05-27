@@ -38,7 +38,7 @@ vertical-align: top;
 /*メインビジュアル*/
 .main_visual_area {
 background: url("../img/top_bg.png") no-repeat top center;
-background-size: contain;
+background-size: cover;
 }
 #bx-pager{
   width: 100%;
