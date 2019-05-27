@@ -100,14 +100,24 @@ margin: 3rem auto;
 /*バナーエリア*/
 .banner_area {
     padding: 2rem 0;
-/*  background:linear-gradient(90deg,#A0B8DB 0%,#A0B8DB 50%,#F3AACA 50%,#F3AACA 100%);*/
     background:linear-gradient(90deg,#F3A9CA 0%,#F3A9CA 50%,#A0B8DB 50%,#A0B8DB 100%);
 }
+ .banner_area_inner {
+    background-image: url("../img/kikkake-l.png"),url("../img/kikkake-r.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+}
+ 
 @media (max-width: 767px) {
 .banner_area {
     padding: 1rem 0;
-/*  background:linear-gradient(180deg,#A0B8DB 0%,#A0B8DB 50%,#F3AACA 50%,#F3AACA 100%);*/
     background:linear-gradient(180deg,#F3A9CA 0%,#F3A9CA 50%,#A0B8DB 50%,#A0B8DB 100%);
+ }
+.banner_area_inner {
+    background-image: url("../img/kikkake-l.png"),url("../img/kikkake-r.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    background-size:20% auto;
 }
 }
 
