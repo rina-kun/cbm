@@ -37,7 +37,7 @@ vertical-align: top;
 
 /*メインビジュアル*/
 .main_visual_area {
-background: url("/img/top_bg.png") no-repeat top center;
+background: url("../img/top_bg.png") no-repeat top center;
 background-size: contain;
 }
 #bx-pager{
@@ -54,11 +54,11 @@ background-size: contain;
   border-left: 0px solid transparent;
 }
 #bx-pager li a img{
-  width: 100%; 
+  width: 100%;
   display: block;
   opacity: 0.5;
 }
-#bx-pager a.active img{  
+#bx-pager a.active img{
   opacity: 1;
 }
 #bx-pager a:last-child,
