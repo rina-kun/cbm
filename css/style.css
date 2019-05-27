@@ -77,7 +77,7 @@ background-size: cover;
 }
 #bx-pager a.active img , #bx-pager a:hover img,
 #bx-pager_mb a.active img , #bx-pager_mb a:hover img {
-  border: 1px solid #333;
+  border: 1px solid #ccc;
 }
 
 /*メインテキスト*/
