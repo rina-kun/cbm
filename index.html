@@ -28,14 +28,9 @@ $(document).ready(function(){
 });
 </script>
 <script>
-$(function(){
-  var nH = $('#container-wrapp').innerHeight();// ナビの高さを取得
-
-  var wH = $(window).height();// 表示画面の高さを取得
-
-  var hH = wH - nH;// 表示画面とナビエリアの差分を算出
-
-  $('#mv').css('height', hH + 'px');// 算出した差分をヘッダーエリアの高さに指定
+$(document).ready(function() {
+    hsize = $(window).height();
+     $("container-wrapp").css("height", hsize + "px");
 });
 </script>
 <!-- <style>
