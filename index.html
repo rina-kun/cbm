@@ -27,13 +27,10 @@ $(document).ready(function(){
   });
 });
 
-$(window).load(function() {
-//画面高さ取得
-h = $(window).height();
-$('#container-wrapp').css('min-height', h + 'px');
+$(document).ready(function() {
+    hsize = $(window).height();
+     $("ここに画像をバックグラウンドに指定した要素").css("height", hsize + "px");
 });
-$(window).resize(function() {
-//画面リサイズ時の高さ取得
 </script>
 
 <style>
