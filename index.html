@@ -26,9 +26,22 @@ $(document).ready(function(){
     pagerCustom: '#bx-pager'
   });
 });
+
+$(function(){
+  var nH = $('#gnavi').innerHeight();// ナビの高さを取得
+
+  var wH = $(window).height();// 表示画面の高さを取得
+
+  var hH = wH - nH;// 表示画面とナビエリアの差分を算出
+
+  $('#mv').css('height', hH + 'px');// 算出した差分をヘッダーエリアの高さに指定
+});
+
 </script>
 </head>
 <body>
+
+<div id="container-wrapp">
 
 <header class="globalheader">
 	<h1 class="logo">
@@ -99,7 +112,7 @@ CMBの学校生活は、きっとあなたの大きな何かに繋がるはず�
    </ul>
    </div><!--sns_area-->
 	</div>
- 
+
 	<div class="course_bnr_img col-xs-12 col-md-6">
 		<a href="http://takizawa.ac.jp/" target="_blank"><img src="img/special_course_bnr.png" alt="千葉モードビジネス専門学校"></a>
   <div class="sns_area">
@@ -124,6 +137,8 @@ CMBの学校生活は、きっとあなたの大きな何かに繋がるはず�
 </div>
 </div><!-- /banner_area_inner-->
 </section><!--/banner_area-->
+
+</div><!-- /container-wrapp -->
 
 <footer>
 <div class="copyright">
