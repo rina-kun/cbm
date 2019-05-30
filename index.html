@@ -28,14 +28,18 @@ $(document).ready(function(){
 });
 </script>
 <script>
-$(document).ready(function() {
-    hsize = $(window).height();
-     $("#container-wrapp").css("height", hsize + "px");
+$(window).load(function() {
+//画面高さ取得
+h = $(window).height();
+$('#container-wrapp').css('min-height', h + 'px');
 });
+$(window).resize(function() {
+//画面リサイズ時の高さ取得
 </script>
-<!-- <style>
-  #container-wrapp {  width: 100vw; height: 100vh; }
-</style> -->
+<style>
+  #container-wrapp { height: 100%; }
+  body {height: 100%;}
+</style>
 </head>
 <body>
 
