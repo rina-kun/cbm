@@ -34,32 +34,6 @@ padding: 10px 0;
 vertical-align: top;
 }
 
-html,
-body {
-  height: 100%;
-}
-@media (min-width: 992px){
-#container-wrapper {
-  width: 1110px;
-  height: 143%;
-  background-color: #f9f;
-
-}
-
-.first-view {
-  width: 1110px;
-  height: 90%;
-  min-height: 90%;
-  background-color: #9ff;
-}
-
-.hidden-view {
-  width: 1110px;
-  height: 10%;
-  background-color: #999;
-}
-}
-
 
 /*メインビジュアル*/
 .main_visual_area {
