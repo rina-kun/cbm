@@ -41,7 +41,7 @@ background: url("../img/top_bg.jpg") no-repeat top center;
 background-size: cover;
 }
 .bx-wrapper{
-  margin: 0 0 0 0;
+  margin: 10px 0 0 0;
 }
 @media (max-width: 767px) {
 .bx-wrapper{
