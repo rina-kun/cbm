@@ -26,6 +26,17 @@ $(document).ready(function(){
     pagerCustom: '#bx-pager'
   });
 });
+//bxslider修正 target='_blank'にも対応したタイプ
+$(document).on('mousedown','.bx-viewport a',function(){
+  var $this = $(this),
+      myHref = $this.attr('href'),
+      myTarget = $this.attr('target');
+  if(myTarget === '_blank'){
+    window.open(myHref);
+  }else{
+    window.location.href = myHref;
+  }
+});
 </script>
 </head>
 <body>
